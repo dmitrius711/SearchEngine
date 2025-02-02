@@ -1,2 +1,2 @@
-#SearchEngine
-##Project for search texts in files.
+# SearchEngine
+## Project for search texts in files.
