@@ -6,4 +6,7 @@
 
 # What technologies are used?
 ## The project uses the following list of technologies:
-
+## **C++17**
+## **CMAKE 3.28**
+## **Nlohmann Json**
+## **Google Tests**
