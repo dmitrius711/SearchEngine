@@ -4,13 +4,13 @@
 # What is a search engine?
 ### This is a console application, searching and having the ability to configure through files of the format JSON
 ## The principle of operation.
-### 1. Before launching the application, the names of the files to be searched are specified in the configuration file.
-### 2. The search engine itself checks the files and indexes them so that it can later find the most relevant documents based on the search query.
-### 3. The request itself is set as a set of words in the request.json file.
-### 4. The query is converted to a list of words.
-### 5. The search engine searches for those documents that contain the words given in the requests.json file.
-### 6. The search results are sorted. The maximum number of responses is set in the config.json file.
-### 7. The result of the program is written to the answers.json file.
+#### 1. Before launching the application, the names of the files to be searched are specified in the configuration file.
+#### 2. The search engine itself checks the files and indexes them so that it can later find the most relevant documents based on the search query.
+#### 3. The request itself is set as a set of words in the request.json file.
+#### 4. The query is converted to a list of words.
+#### 5. The search engine searches for those documents that contain the words given in the requests.json file.
+#### 6. The search results are sorted. The maximum number of responses is set in the config.json file.
+#### 7. The result of the program is written to the answers.json file.
 
 
 
