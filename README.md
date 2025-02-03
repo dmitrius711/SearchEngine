@@ -16,4 +16,6 @@
 ### 2. After you have downloaded the zip file of the project, unzip it to disk C or any other.
 ### 3. Open the project in any ide, such as [Visual Studio](https://visualstudio.microsoft.com/) or [Clion](https://www.jetbrains.com/clion/?ysclid=m6p2hmhyla280950481).
 ### 4. Next, build the project using the Cmake file located in the project.
-### 5.
+### 5. The json_files folder contains a file for configuring the search engine, as well as a file containing queries; they can be edited at your discretion.
+### 6. After configuring the json files, you can run main.cpp , which is located in the root folder of the project.
+### 7. The results of the program are recorded in the answers json file, in the json files folder.
