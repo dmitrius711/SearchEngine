@@ -15,7 +15,6 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 add_executable(tests
-        main.cpp
         ${SrcFiles}
         ${IncludeFiles}
 
