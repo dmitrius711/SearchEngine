@@ -1,9 +1,9 @@
 # SearchEngine
-### Project for search texts in files.  
+#### Project for search texts in files.  
 
 
 # What is a search engine?
-### This is a console application, searching and having the ability to configure through files of the format JSON
+#### This is a console application, searching and having the ability to configure through files of the format JSON
 ## The principle of operation.
 #### 1. Before launching the application, the names of the files to be searched are specified in the configuration file.
 #### 2. The search engine itself checks the files and indexes them so that it can later find the most relevant documents based on the search query.
@@ -20,11 +20,11 @@
 
 
 # What technologies are used?
-### The project uses the following list of technologies:
-### [C++17](https://en.cppreference.com/w/cpp/17)
-### [Cmake 3.28](https://cmake.org/)
-### [nlohmann/json](https://github.com/nlohmann/json?ysclid=m6p24s1eqp789591412)
-### [Google Tests](https://github.com/google/googletest?ysclid=m6p25nod2y333254595)
+#### The project uses the following list of technologies:
+#### [C++17](https://en.cppreference.com/w/cpp/17)
+#### [Cmake 3.28](https://cmake.org/)
+#### [nlohmann/json](https://github.com/nlohmann/json?ysclid=m6p24s1eqp789591412)
+#### [Google Tests](https://github.com/google/googletest?ysclid=m6p25nod2y333254595)
 
 # How to start a project
 #### 1. Download the project directly from GitHub.
