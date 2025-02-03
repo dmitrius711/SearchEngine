@@ -7,7 +7,7 @@
 # What technologies are used?
 ### The project uses the following list of technologies:
 ### [C++17](https://en.cppreference.com/w/cpp/17)
-### **CMAKE 3.28**
+### [Cmake 3.28](https://cmake.org/)
 ### [nlohmann/json](https://github.com/nlohmann/json?ysclid=m6p24s1eqp789591412)
 ### [Google Tests](https://github.com/google/googletest?ysclid=m6p25nod2y333254595)
 
