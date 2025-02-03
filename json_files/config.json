@@ -6,9 +6,9 @@
   },
 
   "files": [
-    "C://SearchEngine-main//files//file001.txt",
-    "C://SearchEngine-main//files//file002.txt",
-    "C://SearchEngine-main//files//file003.txt",
-    "C://SearchEngine-main//files//file004.txt"
+    "..\\files\\file001.txt",
+    "..\\files\\file002.txt",
+    "..\\files\\file003.txt",
+    "..\\files\\file004.txt"
   ]
 }
