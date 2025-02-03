@@ -14,4 +14,6 @@
 # How to start a project
 ### 1. Download the project directly from GitHub.
 ### 2. After you have downloaded the zip file of the project, unzip it to disk C or any other.
-### 3. Open the project in any ide, such as Visual Studio or Clion.
+### 3. Open the project in any ide, such as [Visual Studio](https://visualstudio.microsoft.com/) or [Clion](https://www.jetbrains.com/clion/?ysclid=m6p2hmhyla280950481).
+### 4. Next, build the project using the Cmake file located in the project.
+### 5.
