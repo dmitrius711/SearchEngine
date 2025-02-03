@@ -10,3 +10,5 @@
 ### **CMAKE 3.28**
 ### **Nlohmann Json**
 ### **Google Tests**
+
+## How to start a project
