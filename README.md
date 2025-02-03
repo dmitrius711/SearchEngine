@@ -8,7 +8,7 @@
 ### The project uses the following list of technologies:
 ### **C++17**
 ### **CMAKE 3.28**
-### **Nlohmann Json**
+### [nlohmann/json](https://github.com/nlohmann/json?ysclid=m6p24s1eqp789591412)
 ### **Google Tests**
 
 ## How to start a project
