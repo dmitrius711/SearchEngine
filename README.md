@@ -31,7 +31,7 @@
 # *How to start a project.*
 
 #### 1. Download the project directly from GitHub.
-#### 2. After you have downloaded the zip file of the project, unzip it to disk C or any other.
+#### 2. After you have downloaded the zip file of the project, unzip it to disk C.
 #### 3. Open the project in any IDE, such as [Visual Studio](https://visualstudio.microsoft.com/) or [Clion](https://www.jetbrains.com/clion/?ysclid=m6p2hmhyla280950481).
 #### 4. Next, build the project using the Cmake file located in the project.
 #### 5. The json_files folder contains a file for configuring the search engine, as well as a file containing queries; they can be edited at your discretion.
