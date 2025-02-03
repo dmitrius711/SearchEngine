@@ -1,4 +1,4 @@
-# SearchEngine
+# **SearchEngine**.
 #### Project for search texts in files.  
 
 
@@ -26,7 +26,7 @@
 ### [nlohmann/json](https://github.com/nlohmann/json?ysclid=m6p24s1eqp789591412)
 ### [Google Tests](https://github.com/google/googletest?ysclid=m6p25nod2y333254595)
 
-# How to start a project
+# How to start a project.
 #### 1. Download the project directly from GitHub.
 #### 2. After you have downloaded the zip file of the project, unzip it to disk C or any other.
 #### 3. Open the project in any IDE, such as [Visual Studio](https://visualstudio.microsoft.com/) or [Clion](https://www.jetbrains.com/clion/?ysclid=m6p2hmhyla280950481).
