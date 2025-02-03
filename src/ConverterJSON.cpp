@@ -5,7 +5,7 @@
 projectData ConverterJSON::GetNameAndVersion()
 {
     projectData projectData;
-    std::ifstream configFile("C:\\SearchEngine-main\\json_files\\config.json");
+    std::ifstream configFile("..\\json_files\\config.json");
     nlohmann::json configJson;
     try
     {
@@ -42,7 +42,7 @@ projectData ConverterJSON::GetNameAndVersion()
 
 std::vector<std::string> ConverterJSON::GetTextDocuments()
 {
-    std::ifstream configFile("C:\\SearchEngine-main\\json_files\\config.json");
+    std::ifstream configFile("..\\json_files\\config.json");
     std::vector<std::string> listOfFiles;
     std::vector<std::string> fileContents;
 
@@ -92,7 +92,7 @@ std::vector<std::string> ConverterJSON::GetTextDocuments()
 
 int ConverterJSON::GetResponsesLimit()
 {
-   std::ifstream configFile("C:\\SearchEngine-main\\json_files\\config.json");
+   std::ifstream configFile("..\\json_files\\config.json");
    nlohmann::json configJson;
 
    try
@@ -134,7 +134,7 @@ int ConverterJSON::GetResponsesLimit()
 
 std::vector<std::string> ConverterJSON::GetRequests()
 {
-    std::ifstream requestFile("C:\\SearchEngine-main\\json_files\\requests.json");
+    std::ifstream requestFile("..\\json_files\\requests.json");
     std::vector<std::string> result;
 
     try
@@ -177,7 +177,7 @@ void ConverterJSON::putAnswers(const std::vector<std::vector<RelativeIndex>> &an
 {
     nlohmann::json ans;
     int ind = 1;
-    std::ofstream answersFile("C:\\SearchEngine-main\\json_files\\answers.json", std::ios::trunc);
+    std::ofstream answersFile("..\\json_files\\answers.json", std::ios::trunc);
 
     try
     {
