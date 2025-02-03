@@ -9,6 +9,6 @@
 ### **C++17**
 ### **CMAKE 3.28**
 ### [nlohmann/json](https://github.com/nlohmann/json?ysclid=m6p24s1eqp789591412)
-### **Google Tests**
+### [Google Tests](https://github.com/google/googletest?ysclid=m6p25nod2y333254595)
 
 ## How to start a project
