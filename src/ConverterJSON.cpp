@@ -200,7 +200,7 @@ void ConverterJSON::putAnswers(const std::vector<std::vector<RelativeIndex>> &an
         {
             nlohmann::json dict_pair;
             dict_pair["docid"] = p.doc_id;
-            dict_pair["rank"] = p.rank;
+            dict_pair["rank"] = std::floor(p.rank * 10 + 0.5) / 10;
             request["relevance"].push_back(dict_pair);
         }
 
