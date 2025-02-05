@@ -6,7 +6,7 @@
 
 struct projectData
 {
-    std::string name; float version;
+    std::string name; float version; int maxResponses;
 };
 
 class ConverterJSON{
@@ -37,5 +37,5 @@ public:
      * Метод получения названия проекта
      * @return возвращает название из поля name и версии из поля version
      */
-    projectData GetNameAndVersion();
+    projectData GetDataProject();
 };
