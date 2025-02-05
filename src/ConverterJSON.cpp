@@ -2,7 +2,7 @@
 #include "nlohmann/json.hpp"
 #include "CustomExceptions.h"
 
-projectData ConverterJSON::GetNameAndVersion()
+projectData ConverterJSON::GetDataProject()
 {
     projectData projectData;
     std::ifstream configFile("..\\json_files\\config.json");
