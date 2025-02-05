@@ -7,7 +7,10 @@
 
 std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<std::string> &queries_input)
 {
-    std::vector<std::vector<RelativeIndex>> results;
+    auto results = std::vector<std::vector<RelativeIndex>>();
+
+    projectData prData;
+
     std::vector<std::string> individualWords;
 
     for(auto &request : queries_input)
@@ -92,10 +95,7 @@ std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<s
                 std::sort(answer.begin(), answer.end(),
                           [](RelativeIndex const &a, RelativeIndex const &b) { return a.rank > b.rank; });
 
-                auto converter = ConverterJSON();
-                int maxResponses = converter.GetResponsesLimit();
-
-                while (answer.size() > maxResponses)
+                while (answer.size() > prData.maxResponses)
                 {
                     answer.pop_back();
                 }
