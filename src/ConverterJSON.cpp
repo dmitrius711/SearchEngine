@@ -36,6 +36,15 @@ projectData ConverterJSON::GetNameAndVersion()
 
     projectData.name = configJson["config"]["name"];
     projectData.version = configJson["config"]["version"];
+    
+    if(!configJson["config"]["max_responses"].is_null() && configJson["config"]["max_responses"].is_number())
+    {
+        projectData.maxResponses = configJson["config"]["max_responses"];
+    }
+    else
+    {
+        projectData.maxResponses = 5;
+    }
 
     return projectData;
 }
@@ -90,47 +99,6 @@ std::vector<std::string> ConverterJSON::GetTextDocuments()
     return fileContents;
 }
 
-int ConverterJSON::GetResponsesLimit()
-{
-   std::ifstream configFile("..\\json_files\\config.json");
-   nlohmann::json configJson;
-
-   try
-   {
-       if (!configFile.is_open())
-       {
-           throw exceptionConfigFileIsMissing();
-       }
-   }
-   catch(exceptionConfigFileIsMissing e)
-   {
-       std::cerr << e.what() << std::endl;
-   }
-
-   configFile >> configJson;
-
-   try
-   {
-       if(configJson["config"].empty())
-       {
-           throw exceptionConfigFileIsEmpty();
-       }
-   }
-
-   catch(exceptionConfigFileIsEmpty e)
-   {
-       std::cerr << e.what() << std::endl;
-   }
-
-   if(!configJson["config"]["max_responses"].is_null() && configJson["config"]["max_responses"].is_number())
-   {
-       return configJson["config"]["max_responses"];
-   }
-   else
-   {
-       return 5;
-   }
-}
 
 std::vector<std::string> ConverterJSON::GetRequests()
 {
