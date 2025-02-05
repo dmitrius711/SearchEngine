@@ -6,7 +6,7 @@ int main()
     auto converter = ConverterJSON();
     auto invIndex = InvertedIndex();
 
-    projectData project_data = converter.GetNameAndVersion();
+    projectData project_data = converter.GetDataProject();
     std::cout << "Starting: " << project_data.name << std::endl;
     std::cout << "Version: " << project_data.version << std::endl;
 
