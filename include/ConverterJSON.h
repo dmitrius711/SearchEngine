@@ -34,7 +34,7 @@ public:
     */
     void putAnswers(const std::vector<std::vector<RelativeIndex>> &answers);
     /**
-     * Метод получения названия проекта
+     * Метод получения названия проекта, версии и максимального количества ответов
      * @return возвращает название из поля name и версии из поля version
      */
     projectData GetDataProject();
