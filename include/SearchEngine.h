@@ -29,6 +29,9 @@ public:
     std::vector <std::vector<RelativeIndex>> search(const
                                                     std::vector <std::string> &queries_input);
 
+    void SetMaxResp(int maxResp);
+
 private:
     InvertedIndex _index;
+    int maxResponse = 5;
 };
