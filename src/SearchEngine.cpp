@@ -1,4 +1,3 @@
-
 #include "ConverterJSON.h"
 #include <unordered_set>
 #include <algorithm>
@@ -8,12 +7,9 @@
 std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<std::string> &queries_input)
 {
     auto results = std::vector<std::vector<RelativeIndex>>();
-
-    projectData prData;
-
     std::vector<std::string> individualWords;
 
-    for(auto &request : queries_input)
+    for(const auto &request : queries_input)
     {
         std::stringstream ss(request);
         std::string wordFromString;
@@ -45,9 +41,8 @@ std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<s
                   [](std::pair<std::string, size_t> const &a, std::pair<std::string, size_t> const &b) {
                       return a.second < b.second;
                   });
-        auto answer = std::vector<RelativeIndex>();
-
-        if (wordsCount[0].second != 0)
+        std::vector<RelativeIndex> answer;
+        if (wordsCount[0].second != 0 )
         {
             std::map<size_t, std::vector<std::pair<std::string, size_t>>> docs;
 
@@ -86,7 +81,7 @@ std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<s
             }
 
 
-            for (auto &[key, value]: relativeMap)
+            for(auto &[key, value]: relativeMap)
             {
                 auto relativeRelevance = RelativeIndex(key, (float) value / maxAbsoluteRelevance);
 
@@ -95,13 +90,16 @@ std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<s
                 std::sort(answer.begin(), answer.end(),
                           [](RelativeIndex const &a, RelativeIndex const &b) { return a.rank > b.rank; });
 
-                while (answer.size() > prData.maxResponses)
-                {
-                    answer.pop_back();
-                }
+
+                while(answer.size() > this->maxResponse) answer.pop_back();
             }
         }
         results.push_back(answer);
     }
     return results;
+}
+
+void SearchServer::SetMaxResp(int maxResp)
+{
+    this->maxResponse = maxResp;
 }
