@@ -16,6 +16,7 @@ int main()
     invIndex.UpdateDocumentBase(texts);
 
     SearchServer searchEngine(invIndex);
+    searchEngine.SetMaxResp(project_data.maxResponses);
 
     auto result = searchEngine.search(requests);
     converter.putAnswers(result);
